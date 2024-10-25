@@ -20,28 +20,23 @@ class MainActivity : ComponentActivity() {
         setContent {
             ArtspaceTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    ArtspaceTheme {
-        Greeting("Android")
-    }
+// Composable utama untuk UI
+@Composble 
+fun ArtSpaceScreen(modifier : Modifier = Modifier){
+
+    // Objek untuk menangkap setiap class dari id gambar
+
+    val firstArtwork = R.drawable.gambar1
+	val secondArtwork = R.drawable.gambar2
+	val thirdArtwork = R.drawable.gambar3
+	val fourthArtwork = R.drawable.gambar4
+    val fivethArtwork = R.drawable.gambar5
+    
 }
