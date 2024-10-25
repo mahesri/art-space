@@ -38,5 +38,18 @@ fun ArtSpaceScreen(modifier : Modifier = Modifier){
 	val thirdArtwork = R.drawable.gambar3
 	val fourthArtwork = R.drawable.gambar4
     val fivethArtwork = R.drawable.gambar5
-    
+
+	// mutable state setiap evvent yang tampil di current screen 
+
+	// menyimpan current state untuk judul
+	var title by remeber {
+		 mutableStateOf(R.string.striong1)	
+	}
+
+	// menyimpan current state untuk judul
+
+	var year by remember {
+		mutableStateOf(R.string.striong2)
+	}
+	
 }
